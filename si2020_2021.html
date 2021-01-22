@@ -1,6 +1,21 @@
 <!doctype html>
 
 <html lang="en">
+
+<style>
+
+
+.center {
+	width: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+
+}
+
+</style>
+
 <head>
 	<meta charset="utf-8">
 	
@@ -8,35 +23,62 @@
 	<meta name="description" content="Ativade 2 de Sistemas de Informação">
 	<meta name="author" content="Beatriz Leite e Daniel">
 	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	
-	<link rel="stylesheet" href="main.css">
+	<!---<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm">--->
+	<link href="css/css_sheet.css" rel="stylesheet" type="text/css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+
 </head>
 
-<body>
-		<script src="js/scripts.js"></script>
-		<!--Navigation Bar-->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#">Navbar</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav">
-					<a class="nav-item nav-link active" href="main.html">Home <span class="sr-only">(current)</span></a>
-					<a class="nav-item nav-link" href="atividades.html">Atividades Preferidas</a>
-					<a class="nav-item nav-link" href="expectstivas.hmtl">Expectativas para o curso</a>
-					<a class="nav-item nav-link disabled" href="acerca.html">Acerca de</a>
-		</div>
-	</div>
-	</nav>
-
-		<div class="container">
+	<body>
+		<nav>
+			<ul>
+				<!---item nº1--->
+				<li>
+					<a href="#atividades">Atividades Preferidas</a>
+				</li>
+				<!---item nº2--->
+				<li>
+					<a href="#expectativas">Expectativas para o curso</a>
+				</li>
+				<!---item nº3--->
+				<li>
+					<a href="http://homepage.ufp.pt/lmbg/">Professor</a>
+				</li>
+			</ul>
+		</nav>
+		
+		
+		<div class="center">
 			<div class="row">
-				<div class="col-md-6 col-xs-6">
-					<img src="image.jpg" class="img-responsive">
+				<div class="col-md-6">
+					<h3><strong>Daniel</strong></h3>
+					<br>
+					<a href="#demo1" data-toggle="collapse">
+						<img src="image.jpg" class="img-fluid" width="200" alt="icon do Daniel">
+					</a>
+					<div id="demo1" class="collapse">
+						<p>Aluno de Engenharia Informática na UFP.</p>
+						<p>18 anos.</p>
+						<p>Terminou o curso de ciências e tecnologias no secundário.</p>
+					</div>
+				</div>
+				
+				<div class="col-md-6">
+					<h3><strong>Beatriz</strong></h3>
+					<br>
+					<a href="#demo2" data-toggle="collapse">
+						<img src="image2.jpg" class="img-fluid" width="200" alt="icon da Beatriz">
+					</a>
+					<div id="demo2" class="collapse">
+						<p>Aluna de engenharia informática na UFP.</p>
+						<p>20 anos.</p>
+						<p>Terminou o curso de ciências e tecnlogias no secundário.</p>
+					</div>
 				</div>
 			</div>
 		</div>
-</body>
+	</body>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </html>
