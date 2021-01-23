@@ -24,21 +24,30 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 	
 	
-			<nav>
+		<nav>
 			<ul>
 				<!---item nº1--->
 				<li>
-					<a href="atividades.html">Atividades Preferidas</a>
+					<a href="si2020_2021.html">Home</a>
 				</li>
 				<!---item nº2--->
 				<li>
-					<a href="#expectativas">Expectativas para o curso</a>
+					<a href="atividades.html">Atividades Preferidas</a>
 				</li>
 				<!---item nº3--->
 				<li>
+					<a href="#expectativas">Expectativas para o curso</a>
+				</li>
+				<!---item nº4--->
+				<li>
 					<a href="http://homepage.ufp.pt/lmbg/">Professor</a>
 				</li>
-				
+				<!---item nº5--->
+				<div class="search-container pull-right">
+					<input type="text" placeholder="Search.." name="search">
+					<button type="submit">Submit</button>
+				</div>
+			
 			</ul>
 		</nav>
 		
@@ -106,6 +115,18 @@
 			</div>
 			<!-- modal -->
 		</div>
+		<button id="btn" onclick="modoDark()" style="float: right"><i class="fas fa-moon"></i></button>
+		<button id="topo" title="Clique para ir para o topo" onclick="irtopo()">Ir Topo</button>
+	
+	<script>
+	function modoDark() {
+		var element = document.body;
+		element.classList.toggle("dark-mode");
+	}
+	</script>
+		<script src="scripts/topo.js"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
