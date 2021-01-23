@@ -2,20 +2,6 @@
 
 <html lang="en">
 
-<style>
-
-
-.center {
-	width: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-
-}
-
-</style>
-
 <head>
 	<meta charset="utf-8">
 	
@@ -26,7 +12,8 @@
 	<!---<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm">--->
 	<link href="css/css_sheet.css" rel="stylesheet" type="text/css">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-
+	<script src="https://kit.fontawesome.com/d1f8869562.js" crossorigin="anonymous"></script>
+	
 	
 </head>
 
@@ -37,23 +24,24 @@
 				<li>
 					<a href="si2020_2021.html">Home</a>
 				</li>
+				<!---item nº2--->
 				<li>
 					<a href="atividades.html">Atividades Preferidas</a>
 				</li>
-				<!---item nº2--->
+				<!---item nº3--->
 				<li>
 					<a href="#expectativas">Expectativas para o curso</a>
 				</li>
-				<!---item nº3--->
+				<!---item nº4--->
 				<li>
 					<a href="http://homepage.ufp.pt/lmbg/">Professor</a>
 				</li>
-				<div class="search-container">
-					<form action="/action_page.php">
-						<input type="text" placeholder="Search.." name="search">
-						<button type="submit">Submit</button>
-					</form>
+				<!---item nº5--->
+				<div class="search-container pull-right">
+					<input type="text" placeholder="Search.." name="search">
+					<button type="submit">Submit</button>
 				</div>
+			
 			</ul>
 		</nav>
 		
@@ -83,19 +71,43 @@
 						<p>Aluna de engenharia informática na UFP.</p>
 						<p>20 anos.</p>
 						<p>Terminou o curso de ciências e tecnlogias no secundário.</p>
+						<p>Frequentou 2 anos no curso de Engenharia de Computadores e Telemática em Aveiro.</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<button onclick="modoDark()">Modo Escuro</button>
-	</body>
-<script>
-function modoDark() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+		
+		<hr>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="center">
+						Razão para a escolha do curso de Engenharia Informática
+					</h3>
+					<table class="center">
+						<tr>
+							<th>Daniel</th>
+							<th>Beatriz</th>
+						</tr>
+						<tr>
+							<td>pois</td>
+							<td>agreed</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<button id="btn" onclick="modoDark()" style="float: right"><i class="fas fa-moon"></i></button>
+		<button id="topo" title="Clique para ir para o topo" onclick="irtopo()">Ir Topo</button>
+	
+	<script>
+	function modoDark() {
+		var element = document.body;
+		element.classList.toggle("dark-mode");
+	}
+	</script>
+		<script src="scripts/topo.js"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
 </html>

@@ -47,7 +47,8 @@ h2 {
 }
 
 body{
-	padding: 25px;
+
+	padding-right: 5px;
 	background-color: white;
 	color: black;
 	font-size: 25px;
@@ -56,4 +57,50 @@ body{
 .dark-mode{
 	background-color: black;
 	color: white;
+}
+
+#topo {
+  display:none;
+  position:fixed; 
+  bottom:15px;
+  right:20px;
+  z-index:90;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    padding-left: 25%;
+    padding-right: 25%;
+    box-sizing: border-box;
+}
+
+.btn {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+.btn:hover{
+	background-color: RoyalBlue;
+}
+
+.center {
+	width: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+
 }
