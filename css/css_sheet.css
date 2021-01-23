@@ -1,0 +1,47 @@
+li{
+	list-style-type: none;
+	
+	/*adiciona 2 valores para a margem*/
+	margin: 0 2vw;
+	
+	/*o tamanho do tipo de letra é 3% da altura do viewport*/
+	font-size: 3vh;
+}
+
+a{
+	text-decoration: none;
+	
+	color: black;
+	
+	font-family: monospace;
+}
+
+a:hover{
+	
+	background-color: #C6E9FF;
+}
+
+nav{
+	width: 100vw;
+	background-color: #D6EFFF;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	
+	display: flex;
+}
+
+body{
+	margin: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+.p {
+  text-align: center;
+  padding-top: 130px;
+}
