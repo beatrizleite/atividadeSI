@@ -26,3 +26,8 @@ function upperCase(){
 	var texto = document.getElementById("texto").value.toUpperCase();
 	alert(texto);
 }
+
+function modoDark() {
+	var element = document.body;
+	element.classList.toggle("dark-mode");
+}
