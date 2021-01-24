@@ -1,10 +1,6 @@
 li{
 	list-style-type: none;
-	
-	/*adiciona 2 valores para a margem*/
 	margin: 0 2vw;
-	
-	/*o tamanho do tipo de letra é 3% da altura do viewport*/
 	font-size: 3vh;
 }
 
@@ -90,7 +86,6 @@ body{
   padding: 12px 16px; 
   font-size: 16px; 
   cursor: pointer; 
-  
 }
 
 .btn:hover{
@@ -106,17 +101,9 @@ body{
 
 }
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 table{
 	max-width: 600px;
 	min-width: 400px;
-	margin-bottom: 30px;
 }
 
 td {
@@ -126,10 +113,9 @@ td {
 }
 
 footer{
-	margin-top: auto;
+	margin-top: 20px;
 	color: white;
 	background-color: #484848;
-
 }
 
 img.one{
@@ -137,4 +123,14 @@ img.one{
 	width: 50%;
 	margin-left: 100px;
 	display: block;
+}
+    
+.carousel-inner{
+       height: 50px;
+}
+
+.item, img{
+        height: 100%;
+        width:  100%;
+        border: 1px solid red;
 }

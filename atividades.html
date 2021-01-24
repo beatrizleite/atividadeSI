@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 	<link href="css/css_sheet.css" rel="stylesheet" type="text/css">
+	<link href="css/atividades_css.css" rel=stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Homenaje" rel="stylesheet">
 
 </head>
@@ -36,7 +37,7 @@
 				</li>
 				<!---item nº3--->
 				<li>
-					<a href="#expectativas">Expectativas para o curso</a>
+					<a href="expectativas.html">Expectativas para o curso</a>
 				</li>
 				<!---item nº4--->
 				<li>
@@ -51,12 +52,69 @@
 			</ul>
 		</nav>
 		
-	
-	
-	
-	
-	
-	<section id="interestForm">
+		<button id="btn" onclick="modoDark()" style="float: right"><i class="fas fa-moon"></i></button>
+		
+		
+		<div class="container">
+			<h2>Atividades Preferidas</h2>  
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 500px; margin: 0 auto">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="desc">Jogos</div>
+						<img src="gaming1.jpg" alt="Controlador de consola de jogos." style="width:100%;">
+					</div>
+			
+			 <div class="item">
+			       <div class="desc">Programação</div>
+			        <img src="coding1.jpg" alt="Computador portátil com um editor de texto aberto." style="width:100%;">
+			      </div>
+			    
+			      <div class="item">
+			             <div class="desc">Redes Sociais</div>
+			        <img src="phone1.jpg" alt="Homem com telemóvel na mão." style="width:100%;">
+			      </div>
+			    </div>
+
+    <!-- Left and right controls -->
+			    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			      <span class="glyphicon glyphicon-chevron-left"></span>
+			      <span class="sr-only">Previous</span>
+			    </a>
+			    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+			      <span class="glyphicon glyphicon-chevron-right"></span>
+			      <span class="sr-only">Next</span>
+			    </a>
+				</div>
+				<div>
+					<h4 id="jogos"><b>Jogos</b></h4>
+					<p>Nesta secção vamos falar um pouco sobre as nossas atividades favoritas, extra-curriculares (maior parte).</p>
+					<p>Durante esta altura bastante perigosa para a nossa saúde e do resto do país, as nossas atividades favoritas vêm como algo
+					no qual o tempo gasto é quase sempre dentro de casa e produtivo, dependendo do objetivo.</p>
+					<p>No que toca a jogos, pode-se ver tal coisa como não produtivo ou perda de tempo, mas o que acontece é o contrário. Tomando o jogo
+					como incentivo positivo e razão para terminar bem e rápido tudo o que estiver relacionado com obrigações quer escolares, quer familiares, quer de qualquer outro
+					tipo.</p>
+					
+					<h4 id="prog"><b>Programação</b></h4>
+					<p>Visto que estamos a estudar dentro na área de engenharia Informática, convém ter um mínimo de gosto por programação mas concretamente
+					em pensar em algoritmos para algo que nos pareça interessante ou </p>
+				</div>	
+			</div>
+		</div>
+
+		<button id="topo" title="Clique para ir para o topo" onclick="irtopo()">Ir Topo</button>
+	    
+	    <footer class="py-5 bg-dark">
+			<div class="container">
+				<p class="m-0 text-center text-white">Copyright &copy; Sistemas de Informação - Beatriz e Daniel</p>
+						<section id="interestForm">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-8">
@@ -116,8 +174,9 @@
 			</div>
 			<!-- modal -->
 		</div>
-		<button id="btn" onclick="modoDark()" style="float: right"><i class="fas fa-moon"></i></button>
-		<button id="topo" title="Clique para ir para o topo" onclick="irtopo()">Ir Topo</button>
+			</div>
+		</footer>
+	
 	
 	<script>
 	function modoDark() {
@@ -125,9 +184,6 @@
 		element.classList.toggle("dark-mode");
 	}
 	</script>
-	<script src="scripts/topo.js"></script> 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</body>
 
+</body>
 </html>
