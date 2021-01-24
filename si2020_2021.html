@@ -104,8 +104,76 @@
 				</div>
 			</div>
 		</div>
+		
 		<button id="btn" onclick="modoDark()" style="float: right"><i class="fas fa-moon"></i></button>
 		<button id="topo" title="Clique para ir para o topo" onclick="irtopo()">Ir Topo</button>
+	    
+	    <footer class="py-5 bg-dark">
+			<div class="container">
+				<p class="m-0 text-center text-white">Copyright &copy; Sistemas de Informação - Beatriz e Daniel</p>
+						<section id="interestForm">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8">
+					<p class="lead"><strong>Procura contactar-nos?</strong> Deixe o seu contacto!</p>
+				</div>
+				<!-- col -->
+				<div class="col-sm-4">
+					<button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#interestModal">Carregue aqui para nos contactar</button>
+				</div>
+				<!-- col -->
+			</div>
+		    <!-- row -->
+		  </div>
+		  <!-- container -->
+		</section>
+		
+		<div class="center">
+			<div class="modal fade" id="interestModal">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+					<div class="modal-header">
+						<div style="color: #202020">
+							<button class="close" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">x</span>
+							</button>
+							<h4 class="modal-title" id="myModalLabel"><i class="fa fa-envelope"></i>Contacte-nos!</h4>
+						</div>
+						<!-- modal-header -->
+				
+						<div class="modal-body" style="color: #202020">
+							<p>Responda por favor ao seguinte formulário</p>
+				
+							<form class="form-inline" role="form">
+							<div class="form-group">
+								<label for="mail-name" class="sr-only">Primeiro nome</label>
+								<input type="text" class="form-control" id="mail-name" placeholder="Primeiro nome">
+							</div>
+							<!-- form-group -->
+				
+							<div class="form-group">
+								<label for="mail-email" class="sr-only">E-mail</label>
+								<input type="text" class="form-control" id="mail-email" placeholder="E-mail">
+							</div>
+							<!-- form-group -->
+							<p></p>
+							<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary pull-right">Save changes</button>
+				        </form>
+					</div>
+			      </div>
+			      <!-- modal-body -->
+			    </div>
+			    <!-- modal-content -->
+			
+			  </div>
+			  <!-- modal-dialog -->
+			
+			</div>
+			<!-- modal -->
+		</div>
+			</div>
+		</footer>
+	
 	
 	<script>
 	function modoDark() {
@@ -113,7 +181,7 @@
 		element.classList.toggle("dark-mode");
 	}
 	</script>
-		<script src="scripts/topo.js"></script> 
+	<script src="scripts/topo.js"></script> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>

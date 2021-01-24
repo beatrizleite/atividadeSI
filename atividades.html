@@ -78,32 +78,33 @@
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 					<div class="modal-header">
-						<button class="close" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">x</span>
-						</button>
-						<h4 class="modal-title" id="myModalLabel"><i class="fa fa-envelope"></i>Contacte-nos!</h4>
+						<div style="color: #202020">
+							<button class="close" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">x</span>
+							</button>
+							<h4 class="modal-title" id="myModalLabel"><i class="fa fa-envelope"></i>Contacte-nos!</h4>
+						</div>
+						<!-- modal-header -->
+				
+						<div class="modal-body" style="color: #202020">
+							<p>Responda por favor ao seguinte formulário</p>
+				
+							<form class="form-inline" role="form">
+							<div class="form-group">
+								<label for="mail-name" class="sr-only">Primeiro nome</label>
+								<input type="text" class="form-control" id="mail-name" placeholder="Primeiro nome">
+							</div>
+							<!-- form-group -->
+				
+							<div class="form-group">
+								<label for="mail-email" class="sr-only">E-mail</label>
+								<input type="text" class="form-control" id="mail-email" placeholder="E-mail">
+							</div>
+							<!-- form-group -->
+							<p></p>
+							<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary pull-right">Save changes</button>
+				        </form>
 					</div>
-					<!-- modal-header -->
-			
-					<div class="modal-body">
-						<p>Responda por favor ao seguinte formulário</p>
-			
-						<form class="form-inline" role="form">
-						<div class="form-group">
-							<label for="mail-name" class="sr-only">Primeiro nome</label>
-							<input type="text" class="form-control" id="mail-name" placeholder="Primeiro nome">
-						</div>
-						<!-- form-group -->
-			
-						<div class="form-group">
-							<label for="mail-email" class="sr-only">E-mail</label>
-							<input type="text" class="form-control" id="mail-email" placeholder="E-mail">
-						</div>
-						<!-- form-group -->
-						<p></p>
-						<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary pull-right">Save changes</button>
-			        </form>
-			
 			      </div>
 			      <!-- modal-body -->
 			    </div>
@@ -124,7 +125,7 @@
 		element.classList.toggle("dark-mode");
 	}
 	</script>
-		<script src="scripts/topo.js"></script> 
+	<script src="scripts/topo.js"></script> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
