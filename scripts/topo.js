@@ -14,3 +14,15 @@ function baixo() {
     document.getElementById("topo").style.display = "none";
   }
 }
+
+function multiplicacao(){
+	var n1 = document.getElementById("n1").value;
+	var n2 = document.getElementById("n2").value;
+	var conta = n1 * n2;
+	alert(conta);
+}
+
+function upperCase(){
+	var texto = document.getElementById("texto").value.toUpperCase();
+	alert(texto);
+}

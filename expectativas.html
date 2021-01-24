@@ -13,16 +13,17 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 	<link href="css/css_sheet.css" rel="stylesheet" type="text/css">
-	<link href=
     <link href="https://fonts.googleapis.com/css?family=Homenaje" rel="stylesheet">
-
+    <script src="scripts/topo.js"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	
 </head>
 
 <body>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+
 	
 	
 		<nav>
@@ -56,11 +57,19 @@
 		
 		<div class="container">
 		
-		
-			<p style="float: left"><img class="one" src="photo1.png" alt="Computador portátil" class="pull-left mr-2" style="size: 10%"></p>
-			<p style="float: left">fmriemfjeif friemjferifjmer friejferjmiof ferifjre jde wfiewn frfien rfien refinrjafnie jfrnf erjnfor fjrn fjoeirnf rifnrj fie fjrfn rjenf erifne rifer
-			rebjfuirenf nfire feir ferifn reoinf refnre frkie frkei foerf erki</p>
-		
+			<div class="a">
+				<p style="float: left"><img class="one" src="photo1.png" alt="Computador portátil" class="pull-left mr-2" style="size: 120%"></p>
+				
+				<p style="float: left">Tal como referido anteriormente, escolhemos este curso por razões diferentes, sendo estas a de entrar no mundo de desenvolvimento de jogos
+				e de poder desenvolver software mais no geral, mas durante o nosso percurso durante estes 3 anos de licenciatura, vamos passar pelo mesmo processo de aprendizagem.</p>
+				<p>Temos assim as mesmas disciplinas e projetos, pelo que ambos esperamos obter a capacidade de criar algoritmos e sermos capazes de os organizar e escrever
+				de forma organizada, ou seja, sermos capazes de programação base para que nos seja possível adquirir os nossos objetivos profissionais no mundo do trabalho.</p>
+				<p>Esperamos também que nos seja possível entrar em contacto com diferentes tipos de programação, sendo esta orientada a objetos, funcional, etc.. Algo que nos desperta
+				interesse também é o contacto com o html, que apesar de termos de utilizar neste pequeno projeto, não foi o suficiente para termos o à vontade que desejamos devido ao
+				prazo de entrega apertado.</p>
+				<p>Em conclusão, este curso deixa-nos com bastante vontade de querer aprender e pesquisar mais de modo a obter mais informações que no futuro nos vão com certeza
+				ajudar.</p>
+			</div>
 		</div>
 
 		
@@ -73,67 +82,84 @@
 		<button id="topo" title="Clique para ir para o topo" onclick="irtopo()">Ir Topo</button>
 	    
 	    <footer class="py-5 bg-dark">
-			<div class="container">
-				<p class="m-0 text-center text-white">Copyright &copy; Sistemas de Informação - Beatriz e Daniel</p>
-						<section id="interestForm">
+		<div class="container">
+			<p class="m-0 text-center text-white">Copyright &copy; Sistemas de Informação - Beatriz e Daniel</p>
+		<section id="interestForm">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-8">
-					<p class="lead"><strong>Procura contactar-nos?</strong> Deixe o seu contacto!</p>
+				<div class="column">
+					<button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#times">Multiplicação</button>
 				</div>
-				<!-- col -->
-				<div class="col-sm-4">
-					<button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#interestModal">Carregue aqui para nos contactar</button>
+				<div class="column">
+					<button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#upper">Passar para maiúsculas</button>
 				</div>
-				<!-- col -->
 			</div>
-		    <!-- row -->
 		  </div>
-		  <!-- container -->
 		</section>
 		
 		<div class="center">
-			<div class="modal fade" id="interestModal">
+			<div class="modal fade" id="times">
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 					<div class="modal-header">
 						<div style="color: #202020">
-							<button class="close" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">x</span>
-							</button>
-							<h4 class="modal-title" id="myModalLabel"><i class="fa fa-envelope"></i>Contacte-nos!</h4>
+							<button class="close" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">x</span></button>
+							<h4 class="modal-title" id="myModalLabel"><i class="fa fa-times"></i>Multplicação</h4>
 						</div>
-						<!-- modal-header -->
 				
 						<div class="modal-body" style="color: #202020">
-							<p>Responda por favor ao seguinte formulário</p>
+							<p>Escreva dois numeros</p>
 				
 							<form class="form-inline" role="form">
 							<div class="form-group">
-								<label for="mail-name" class="sr-only">Primeiro nome</label>
-								<input type="text" class="form-control" id="mail-name" placeholder="Primeiro nome">
+								<p>Primeiro numero:
+									<input type="number" class="form-control" id="n1" placeholder="Primeiro numero">
+								</p>
 							</div>
-							<!-- form-group -->
 				
 							<div class="form-group">
-								<label for="mail-email" class="sr-only">E-mail</label>
-								<input type="text" class="form-control" id="mail-email" placeholder="E-mail">
+								<p>Segundo numero:
+									<input type="number" class="form-control" id="n2" placeholder="Segundo numero">
+								</p>
 							</div>
-							<!-- form-group -->
-							<p></p>
+
 							<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary pull-right">Save changes</button>
-				        </form>
+							<button type="button" class="btn btn-primary pull-right" onclick="multiplicacao()">Calcular</button>
+							</form>
+						</div>
 					</div>
-			      </div>
-			      <!-- modal-body -->
 			    </div>
-			    <!-- modal-content -->
+			</div>	
+		</div>
 			
-			  </div>
-			  <!-- modal-dialog -->
+		<div class="modal fase" id="upper">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<div style="color: #202020">
+								<button class="close" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">x</span></button>
+								<h4 class="modal-title" id="myModalLabel"><i class="fa fa-times"></i>Upper Case</h4>
+							</div>
+						
+							<div class="modal-body" style="color: #202020">
+								<p>Escreva uma palavra para passar para maiúsculas</p>
+						
+								<form class="form-inline" role="form">
+								<div class="form-group">
+									<p>Palavra:
+										<input type="text" class="form-control" id="texto" placeholder="Palavra">
+									</p>
+								</div>
+	
+								<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary pull-right" onclick="upperCase()">Maiúsculas</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
 			
-			</div>
-			<!-- modal -->
+		</div>
 		</div>
 			</div>
 		</footer>

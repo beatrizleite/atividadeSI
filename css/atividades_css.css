@@ -14,7 +14,7 @@ a{
 
 a:hover{
 	
-	background-color: #C6E9FF;
+	background-color: #D3D3D3;
 }
 
 nav{
@@ -133,4 +133,13 @@ img.one{
         height: 100%;
         width:  100%;
         border: 1px solid red;
+}
+div.a{
+
+    font-size:20px;
+
+}
+.column {
+  float: left;
+  width: 50%;
 }

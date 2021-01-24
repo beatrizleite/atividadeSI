@@ -94,18 +94,37 @@
 			    </a>
 				</div>
 				<div>
-					<h4 id="jogos"><b>Jogos</b></h4>
-					<p>Nesta secção vamos falar um pouco sobre as nossas atividades favoritas, extra-curriculares (maior parte).</p>
-					<p>Durante esta altura bastante perigosa para a nossa saúde e do resto do país, as nossas atividades favoritas vêm como algo
-					no qual o tempo gasto é quase sempre dentro de casa e produtivo, dependendo do objetivo.</p>
-					<p>No que toca a jogos, pode-se ver tal coisa como não produtivo ou perda de tempo, mas o que acontece é o contrário. Tomando o jogo
-					como incentivo positivo e razão para terminar bem e rápido tudo o que estiver relacionado com obrigações quer escolares, quer familiares, quer de qualquer outro
-					tipo.</p>
-					
-					<h4 id="prog"><b>Programação</b></h4>
-					<p>Visto que estamos a estudar dentro na área de engenharia Informática, convém ter um mínimo de gosto por programação mas concretamente
-					em pensar em algoritmos para algo que nos pareça interessante ou </p>
-				</div>	
+					<div class="a">
+						
+						<br>
+						
+						<h4 style="font-size: 25px" id="jogos"><b>Jogos</b></h4>
+						<p>Nesta secção vamos falar um pouco sobre as nossas atividades favoritas, extra-curriculares (maior parte).</p>
+						<p>Durante esta altura bastante perigosa para a nossa saúde e do resto do país, as nossas atividades favoritas vêm como algo
+						no qual o tempo gasto é quase sempre dentro de casa e produtivo, dependendo do objetivo.</p>
+						<p>No que toca a jogos, pode-se ver tal coisa como não produtivo ou perda de tempo, mas o que acontece é o contrário. Tomando o jogo
+						como incentivo positivo e razão para terminar bem e rápido tudo o que estiver relacionado com obrigações quer escolares, quer familiares, quer de qualquer outro
+						tipo.</p>
+						
+						<br>
+						
+						<h4 style="font-size: 25px" id="prog"><b>Programação</b></h4>
+						<p>Visto que estamos a estudar dentro na área de engenharia Informática, convém ter um mínimo de gosto por programação mais concretamente
+						em pensar em algoritmos para algo que nos pareça interessante ou útil de fazer quer seja para a nossa vida pessoal, quer seja para a nossa vida profissional.
+						Um exemplo para a programação utilizada para algo para a nossa vida pessoal é este vídeo no qual este homem programou através do seu Raspberry Pi as luzes da sua árvore de natal de modo
+						a piscarem da forma e cores que ele decidir. Fica uma ideia interessante que nos pode despertar o interesse para tentarmos nós mesmo que, apesar de ter um nível de complexidade
+						bastante alto, pode ser considerado um projeto pessoal.</p>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/TvlpIojusBE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+						</iframe>
+						
+						<br>
+						
+						<h4 style="font-size: 25px" id="social"><b>Redes Sociais</b></h4>
+						<p>Tal como qualquer outro jovem adulto/adolescente do século 21, também nós dedicamos bastante tempo às redes sociais ao ponto de poder ser chamado de hobby
+						ou atividade extracurricular. Sendo que um dos nossos interesses comuns é ouvir música, a procura de novos artistas e álbuns baseiam-se em opiniões e na procura
+						que fazemos nas redes sociais.</p>
+					</div>	
+				</div>
 			</div>
 		</div>
 
@@ -117,62 +136,79 @@
 						<section id="interestForm">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-8">
-					<p class="lead"><strong>Procura contactar-nos?</strong> Deixe o seu contacto!</p>
+				<div class="column">
+					<button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#times">Multiplicação</button>
 				</div>
-				<!-- col -->
-				<div class="col-sm-4">
-					<button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#interestModal">Carregue aqui para nos contactar</button>
+				<div class="column">
+					<button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#upper">Passar para maiúsculas</button>
 				</div>
-				<!-- col -->
 			</div>
-		    <!-- row -->
 		  </div>
-		  <!-- container -->
 		</section>
 		
 		<div class="center">
-			<div class="modal fade" id="interestModal">
+			<div class="modal fade" id="times">
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 					<div class="modal-header">
 						<div style="color: #202020">
-							<button class="close" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">x</span>
-							</button>
-							<h4 class="modal-title" id="myModalLabel"><i class="fa fa-envelope"></i>Contacte-nos!</h4>
+							<button class="close" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">x</span></button>
+							<h4 class="modal-title" id="myModalLabel"><i class="fa fa-times"></i>Multplicação</h4>
 						</div>
-						<!-- modal-header -->
 				
 						<div class="modal-body" style="color: #202020">
-							<p>Responda por favor ao seguinte formulário</p>
+							<p>Escreva dois numeros</p>
 				
 							<form class="form-inline" role="form">
 							<div class="form-group">
-								<label for="mail-name" class="sr-only">Primeiro nome</label>
-								<input type="text" class="form-control" id="mail-name" placeholder="Primeiro nome">
+								<p>Primeiro numero:
+									<input type="number" class="form-control" id="n1" placeholder="Primeiro numero">
+								</p>
 							</div>
-							<!-- form-group -->
 				
 							<div class="form-group">
-								<label for="mail-email" class="sr-only">E-mail</label>
-								<input type="text" class="form-control" id="mail-email" placeholder="E-mail">
+								<p>Segundo numero:
+									<input type="number" class="form-control" id="n2" placeholder="Segundo numero">
+								</p>
 							</div>
-							<!-- form-group -->
-							<p></p>
+
 							<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary pull-right">Save changes</button>
-				        </form>
+							<button type="button" class="btn btn-primary pull-right" onclick="multiplicacao()">Calcular</button>
+							</form>
+						</div>
 					</div>
-			      </div>
-			      <!-- modal-body -->
 			    </div>
-			    <!-- modal-content -->
+			</div>	
+		</div>
 			
-			  </div>
-			  <!-- modal-dialog -->
+		<div class="modal fase" id="upper">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<div style="color: #202020">
+								<button class="close" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">x</span></button>
+								<h4 class="modal-title" id="myModalLabel"><i class="fa fa-times"></i>Upper Case</h4>
+							</div>
+						
+							<div class="modal-body" style="color: #202020">
+								<p>Escreva uma palavra para passar para maiúsculas</p>
+						
+								<form class="form-inline" role="form">
+								<div class="form-group">
+									<p>Palavra:
+										<input type="text" class="form-control" id="texto" placeholder="Palavra">
+									</p>
+								</div>
+	
+								<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary pull-right" onclick="upperCase()">Maiúsculas</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
 			
-			</div>
-			<!-- modal -->
+		</div>
 		</div>
 			</div>
 		</footer>

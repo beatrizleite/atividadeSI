@@ -138,3 +138,17 @@ img.one{
 	margin-left: 100px;
 	display: block;
 }
+
+img-cont{
+	text-align: center;
+}
+
+div.a{
+
+    font-size:20px;
+
+}
+.column {
+  float: left;
+  width: 50%;
+}

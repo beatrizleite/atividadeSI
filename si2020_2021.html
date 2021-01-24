@@ -13,7 +13,9 @@
 	<link href="css/css_sheet.css" rel="stylesheet" type="text/css">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 	<script src="https://kit.fontawesome.com/d1f8869562.js" crossorigin="anonymous"></script>
-	
+	<script src="scripts/topo.js"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
 </head>
 
@@ -119,62 +121,79 @@
 						<section id="interestForm">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-8">
-					<p class="lead"><strong>Procura contactar-nos?</strong> Deixe o seu contacto!</p>
+				<div class="column">
+					<button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#times">Multiplicação</button>
 				</div>
-				<!-- col -->
-				<div class="col-sm-4">
-					<button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#interestModal">Carregue aqui para nos contactar</button>
+				<div class="column">
+					<button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#upper">Passar para maiúsculas</button>
 				</div>
-				<!-- col -->
 			</div>
-		    <!-- row -->
 		  </div>
-		  <!-- container -->
 		</section>
 		
 		<div class="center">
-			<div class="modal fade" id="interestModal">
+			<div class="modal fade" id="times">
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 					<div class="modal-header">
 						<div style="color: #202020">
-							<button class="close" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">x</span>
-							</button>
-							<h4 class="modal-title" id="myModalLabel"><i class="fa fa-envelope"></i>Contacte-nos!</h4>
+							<button class="close" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">x</span></button>
+							<h4 class="modal-title" id="myModalLabel"><i class="fa fa-times"></i>Multplicação</h4>
 						</div>
-						<!-- modal-header -->
 				
 						<div class="modal-body" style="color: #202020">
-							<p>Responda por favor ao seguinte formulário</p>
+							<p>Escreva dois numeros</p>
 				
 							<form class="form-inline" role="form">
 							<div class="form-group">
-								<label for="mail-name" class="sr-only">Primeiro nome</label>
-								<input type="text" class="form-control" id="mail-name" placeholder="Primeiro nome">
+								<p>Primeiro numero:
+									<input type="number" class="form-control" id="n1" placeholder="Primeiro numero">
+								</p>
 							</div>
-							<!-- form-group -->
 				
 							<div class="form-group">
-								<label for="mail-email" class="sr-only">E-mail</label>
-								<input type="text" class="form-control" id="mail-email" placeholder="E-mail">
+								<p>Segundo numero:
+									<input type="number" class="form-control" id="n2" placeholder="Segundo numero">
+								</p>
 							</div>
-							<!-- form-group -->
-							<p></p>
+
 							<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary pull-right">Save changes</button>
-				        </form>
+							<button type="button" class="btn btn-primary pull-right" onclick="multiplicacao()">Calcular</button>
+							</form>
+						</div>
 					</div>
-			      </div>
-			      <!-- modal-body -->
 			    </div>
-			    <!-- modal-content -->
+			</div>	
+		</div>
 			
-			  </div>
-			  <!-- modal-dialog -->
+		<div class="modal fase" id="upper">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<div style="color: #202020">
+								<button class="close" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">x</span></button>
+								<h4 class="modal-title" id="myModalLabel"><i class="fa fa-times"></i>Upper Case</h4>
+							</div>
+						
+							<div class="modal-body" style="color: #202020">
+								<p>Escreva uma palavra para passar para maiúsculas</p>
+						
+								<form class="form-inline" role="form">
+								<div class="form-group">
+									<p>Palavra:
+										<input type="text" class="form-control" id="texto" placeholder="Palavra">
+									</p>
+								</div>
+	
+								<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary pull-right" onclick="upperCase()">Maiúsculas</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
 			
-			</div>
-			<!-- modal -->
+		</div>
 		</div>
 			</div>
 		</footer>
@@ -186,8 +205,6 @@
 		element.classList.toggle("dark-mode");
 	}
 	</script>
-	<script src="scripts/topo.js"></script> 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
 </html>
